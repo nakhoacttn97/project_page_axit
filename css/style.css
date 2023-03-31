@@ -1,0 +1,763 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 100%;
+    margin: 0px auto;
+    background-color: whitesmoke;
+}
+
+.container {
+    width: 100%;
+}
+
+/*---------------------------*/
+/*--------HEADER SECTION-------------------*/
+/*---------------------------*/
+.header {
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7%;
+    align-items: center;
+    position: fixed;
+}
+
+.nav .nav-logo {
+    width: 50%;
+    margin: 20px 0;
+}
+
+.nav nav a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 0 25px;
+    transition: color .5s;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav nav a:hover {
+    color: #ff9966;
+}
+
+.header header {
+    width: 100%;
+    height: 640px;
+    background-image: url(/img/background_00.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header header .header-layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 7%;
+    align-items: center;
+    grid-gap: 0 30px;
+}
+
+.header-left {
+    color: white;
+}
+
+.header-left h4 {
+    font-weight: normal;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.header-left .header-line {
+    width: 70px;
+    height: 2px;
+    background-color: white;
+    display: block;
+}
+
+.header-left p {
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: lightgray;
+    line-height: 20px;
+    margin: 30px 0;
+}
+
+.header-left .download-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    padding: 7px 18px;
+}
+
+.download-button:hover {
+    transform: scale(110%);
+    border: 2px solid #d7620f;
+    color: #ff8b38;
+    cursor: pointer;
+}
+
+.header-right {
+    width: 100%;
+    height: 70%;
+}
+
+.header-right form {
+    background-color: #ffff;
+    width: 350px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.header-right form h1 {
+    font-size: 18px;
+    text-align-last: center;
+    background-color: #cccccc;
+    color: #333333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 15px 0 10px 0;
+    height: 54px;
+}
+
+.header-right form h1 span {
+    color: #ff9933;
+}
+
+.header-right form input {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid #cccccc;
+}
+
+.header-right form input::placeholder {
+    color: lightgray;
+}
+
+.header-right form a {
+    display: block;
+    width: 100%;
+    text-align-last: center;
+    background-color: #ff9966;
+    color: white;
+    text-decoration: none;
+    padding: 13px 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 50px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-right form a:hover {
+    background-color: #d7620f;
+}
+
+/*---------------------------*/
+/*---------XỬ LÝ SOCIAL MEDIA---------*/
+/*---------------------------*/
+.social-media {
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    background-color: #ffff;
+}
+
+.social-left h2 {
+    font-size: 18px;
+}
+
+.social-left p {
+    font-size: 15px;
+    color: gray;
+}
+
+.social-right .icons a {
+    color: lightgray;
+    font-size: 40px;
+    margin: 0 25px;
+}
+
+/*---------------------------*/
+/*-------XỬ LÝ TABS AREA----------*/
+/*---------------------------*/
+.tabs-area {
+    background-color: rgba(204, 204, 204, 0.2);
+    display: grid;
+    grid-template-columns: 15% 50% 35%;
+    padding: 100px 7%;
+    align-items: center;
+    grid-gap: 0 3px;
+    height: 600px;
+}
+
+.tabs .tab:nth-child(1) {
+    background-color: #ff9933;
+}
+
+.tabs .tab {
+    background-color: crimson;
+    width: 90px;
+    height: 90px;
+    margin: 2px 0;
+    text-align-last: center;
+    line-height: 90px;
+    font-weight: bold;
+    color: white;
+    background-color: #333333;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.tab-texts h3 {
+    font-size: 20px;
+}
+
+.tab-texts p {
+    text-align: justify;
+    margin: 20px 0;
+    margin-right: 70px;
+    color: grey;
+    font-size: 14px;
+}
+
+.tab-img img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.tab-download-btn button {
+    background-color: #ff9933;
+    padding: 16px 24px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    margin: 32px 0;
+}
+
+.tab-download-btn button:hover {
+    background-color: #d7620f;
+    cursor: pointer;
+}
+
+/*---------------------------*/
+/*-----XỬ LÝ SUB LIST SECTION-------*/
+/*---------------------------*/
+.sublist-section {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: auto 7%;
+    align-items: center;
+    grid-gap: 0 3px;
+    /*-- grid-gap xác định khoảng cách giữa các ô lưới--*/
+    height: 600px;
+}
+
+.sublist-left img {
+    width: 525px;
+    height: 375px;
+    margin: 110px 0 110px 115px;
+}
+
+.sublist-right {
+    margin-left: 98px;
+    margin-right: 160px;
+    display: block;
+}
+
+.sublist-right h3 {
+    font-size: 20px;
+    margin-bottom: 29px;
+}
+
+.sublist-line {
+    width: 66px;
+    height: 2px;
+    background-color: #ff9933;
+    display: block;
+    border-radius: 5px;
+}
+
+.sublist-text {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+/*---------XỬ LÝ SUB LIST TITLE 1------------------*/
+.sublist-title-1 {
+    margin-top: 50px;
+    display: flex;
+}
+
+.ft-title-1-icon {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ff9933;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.litle-icon {
+    color: #ff9933;
+}
+
+.ft-title-1-txt {
+    /* padding-left: 30px; */
+    font-size: 14px;
+}
+
+/*---------------------------*/
+/*------XỬ LÝ STANDARD PICTURE SECTION------*/
+/*---------------------------*/
+.standard-picture {
+    width: 100%;
+    height: 523px;
+    background-color: rgba(186, 179, 179, 0.2);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: auto 7%;
+    align-items: center;
+    grid-gap: 0 3px;
+}
+
+.standard-left {
+    width: 430px;
+    margin-left: 151px;
+}
+
+.standard-left h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.standard-left p {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.standard-right {
+    margin-left: 86px;
+    margin-top: 75px;
+}
+
+.standard-right img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*---------------------------*/
+/*-----AWESOME SECTION-------*/
+/*---------------------------*/
+.awesome-section {
+    width: 100%;
+    height: 591px;
+    background-color: #ffff;
+    align-items: center;
+    text-align: center;
+    padding: 70px 7%;
+}
+
+.awesome-head {
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+.awesome-head h1 {
+    font-size: 36px;
+    padding-top: 38px;
+    margin-bottom: 30px;
+}
+
+.awesome-line {
+    width: 66px;
+    height: 2px;
+    background-color: #ff9933;
+    display: block;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.awesome-head p {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    color: grey;
+}
+
+.suggests {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.awesome-icons {
+    color: #ff9933;
+    font-size: 30px;
+    border: 2px solid #ff9933;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    line-height: 70px;
+}
+
+.suggest h3 {
+    margin: 20px 0;
+}
+
+.suggest p {
+    font-size: 14px;
+    color: grey;
+    padding: 0 17px;
+    line-height: 20px;
+}
+
+/*---------------------------*/
+/*----PRICING OPTION---------*/
+/*---------------------------*/
+.pricing {
+    text-align-last: center;
+    background-color: rgba(206, 201, 201, 0.2);
+    padding: 100px 7%;
+}
+
+.pricing .pricing-text h1 {
+    font-size: 36px;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.pricing p {
+    font-size: 14px;
+    color: grey;
+    margin: 50px 0;
+}
+
+.packeges {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    /* align-items: flex-end; sẽ giúp các phần tử con của container sẽ được căn chỉnh theo phía dưới của container */
+}
+
+.packeges .packege {
+    width: 345px;
+    color: white;
+    margin-top: 30px;
+}
+
+.pricing-header {
+    background-color: #333333;
+    width: 100%;
+    border-bottom: 5px solid #ff8b38;
+}
+
+.pricing-header h2 {
+    font-size: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ffff;
+}
+
+.pricing-header h1 {
+    font-size: 94px;
+    padding: 30px 0;
+}
+
+.pricing-header h1 sub {
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.pricing-header span {
+    font-style: italic;
+    color: grey;
+    display: block;
+    padding-bottom: 18px;
+}
+
+.pricing-header h3 {
+    background-color: #ff8b38;
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+.pricing-body p {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    background-color: white;
+}
+
+/*---------------------------*/
+/*------CUSTOMERS------------*/
+/*---------------------------*/
+.customers {
+    padding: 80px 7%;
+    height: 592px;
+}
+
+.customer-text {
+    text-align: center;
+}
+
+.customer-text h1 {
+    font-size: 36px;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.customer-text p {
+    font-size: 14px;
+    color: grey;
+    margin-top: 30px;
+}
+
+.customer-body {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.customer {
+    width: 25%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.customer p {
+    background-color: rgba(199, 192, 192, 0.5);
+    border-radius: 5px;
+    padding: 25px 12px;
+    font-size: 14px;
+    color: grey;
+    font-style: italic;
+    margin-bottom: 22px;
+}
+
+.customer-name {
+    display: flex;
+}
+
+.customer-name img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.customer-name h3 {
+    font-size: 20px;
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+
+.customer-name span {
+    color: grey;
+    font-size: 14px;
+}
+
+/*--------------------------*/
+/*-------STYLISH AXURE section---------*/
+/*--------------------------*/
+.stylish {
+    width: 100%;
+    height: 320px;
+    background-image: url(/img/background_01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stylish .stylish-layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    padding: 0 7%;
+    align-items: center;
+    text-align: center;
+}
+
+.stylish h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: white;
+    padding-top: 75px;
+    margin-bottom: 30px;
+}
+
+.stylish-line {
+    width: 65px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.stylish p {
+    font-size: 14px;
+    padding: 33px 0;
+    color: #cccccc;
+}
+
+.stylish-button {
+    border: 2px solid #ffff;
+    color: #ffff;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 7px 18px;
+}
+
+
+.stylish-button:hover {
+    transform: scale(110%);
+    background-color: white;
+    color: #ff8b38;
+    border: 2px solid #ff8b38;
+    cursor: pointer;
+}
+
+/*--------------------------*/
+/*-----CONTACT US------0----*/
+/*--------------------------*/
+.contact-section {
+    background-color: #ffffff;
+    width: 100%;
+    height: 610px;
+    padding: 100px 0;
+}
+
+.contact-header {
+    display: block;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.contact-header p {
+    font-size: 14px;
+    margin-top: 30px;
+    padding-bottom: 80px;
+    color: grey;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 141px;
+}
+
+.input-form input {
+    width: 527px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 30px;
+    display: block;
+    border: 0;
+    border-bottom: 1px solid grey;
+}
+
+.contact-form textarea {
+    width: 527px;
+    height: 153px;
+    border: 0;
+    border-bottom: 1px solid grey;
+    resize: none;
+}
+
+.contact-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section button {
+    font-size: 15px;
+    color: white;
+    padding: 15px 20px;
+    background-color: #ff8b38;
+    border: none;
+    border-radius: 5px;
+    margin-top: 42px;
+}
+
+.contact-section button:hover {
+    background-color: #d7620f;
+    transform: scale(110%);
+    cursor: pointer;
+}
+
+/*--------------------------*/
+/*-----FOOTER SECTION-------*/
+/*--------------------------*/
+footer {
+    width: 100%;
+    height: 83px;
+    background-color: black;
+    text-align: center;
+}
+
+.footer-social-icons {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 0 15px 0;
+}
+
+.footer-social-icons a {
+    color: lightgray;
+    padding: 0 12px;
+}
+
+footer p {
+    font-size: 12px;
+    color: grey;
+}
